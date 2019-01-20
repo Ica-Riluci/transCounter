@@ -3,10 +3,16 @@
     <title>Test</title>
 </head>
 <body>
-    <form action='/main/login/' method='post'>
+    <form action='/main/login_check/' method='post'>
         {% csrf_token %}
         {{ form }}
         <input type='submit' value='login' />
     </form>
+    {% if nouser %}
+    <div>The user does not exists.</div>
+    {% endif %}
+    {% if wrongpw %}
+    <div>Wrong password</div>
+    {% endif %}
 </body>
 </html>
