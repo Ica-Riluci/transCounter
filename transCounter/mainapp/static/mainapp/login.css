@@ -1,0 +1,50 @@
+html {
+    background-image : url('bg.png');
+    background-repeat : no-repeat;
+    background-position : center center;
+    background-attachment : fixed;
+    width : 100%;
+}
+
+form {
+    z-index : 1;
+    width : 30%;
+    margin : 30vh auto 0 auto;
+    padding : 0;
+    display : block;
+    padding : 0.5em 0.5em;
+}
+
+form:after {
+    content : '';
+    background-image : url('bg.png');
+    background-position : center center;
+    background-attachment : fixed;
+    position : absolute;
+    top : 0;
+    left : 0;
+    right : 0;
+    bottom : 0;
+    background-color : rgba(255, 255, 255, 0.9);
+    z-index : -1
+}
+
+label {
+    width : 30%;
+    margin : 0.5em auto 0.5em 9%;
+    padding : 0;
+    display : inline-block;
+}
+
+input {
+    width : 50%;
+    margin : 0.5em 9% 0.5em auto;
+    padding : 0;
+    display : inline-block;
+}
+
+input[type='submit'] {
+    width : 30%;
+    margin : 0.5em auto;
+    display : block;
+}

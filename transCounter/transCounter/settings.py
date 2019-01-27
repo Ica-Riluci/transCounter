@@ -120,5 +120,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Session and Authentication
 
 LOGIN_URL = '/main/login/'
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+SESSION_SAVE_EVERY_REQUEST = True
